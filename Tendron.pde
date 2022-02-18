@@ -68,6 +68,5 @@ public void mousePressed() {
 public void mouseWheel(MouseEvent event) {
   float e = -2*(event.getCount());
   size+=e;
-  System.out.println(size);
   redraw();
 }
