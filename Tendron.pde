@@ -1,9 +1,9 @@
-public int size;
+public int mySize;
 
 public void setup() {
   size(1000, 1000);
   background(0);
-  size = 250;
+  mySize = 250;
   noLoop();
 }
 
@@ -11,7 +11,7 @@ public void draw() {
   background(0);
   stroke(255);
   strokeWeight(2);
-  tendron(500, 500, size, (int)(Math.random()*360), 100, 100);
+  tendron(500, 500, mySize, (int)(Math.random()*360), 100, 100);
 }
 
 public void tendron(float startX, float startY, float len, float h, float s, float b) {
@@ -67,6 +67,6 @@ public void mousePressed() {
 
 public void mouseWheel(MouseEvent event) {
   float e = -2*(event.getCount());
-  size+=e;
+  mySize+=e;
   redraw();
 }
